@@ -35,6 +35,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 /*Header*/
@@ -51,17 +52,20 @@ h1 {
 	font-size: 24px;
 	font-weight: 600;
 	color: black;
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
-	font-size: 21px;
-	font-weight: 600;
+	font-size: 18px;
+	font-weight: 400;
 	color: black;
 }
 
 header .logo {
-	padding: 5px 0 0 15px;
-	height: 60px;
+	margin: 15px 0 0 15px;
+	height: 40px;
+	display: inline-block;
 }
 
 header .register {
@@ -77,13 +81,36 @@ header .register {
 	background-color: #FAA633;
 }
 
+header a {
+	color: #FAA633;
+	font-weight: 600;
+	margin: 0 0 30px 85px;
+	display: inline-block;
+}
+
+form {
+	display: inline-block;
+	padding-left: 300px;
+}
+
+.searchbox {
+	height: 30px;
+	width: 175px;
+	display: inline-block;
+	border-style: none;
+}
+
 /*Landing*/
 
 #activeCollabs {
 	width: 600px;
-	margin: 10px 0 0 50px;
+	margin: 30px 0 0 50px;
 	display: inline-block;
 	float: left;
+}
+
+#activeCollabs h1 {
+	margin-bottom: 30px;
 }
 
 #activeCollabs .collabox {
@@ -91,10 +118,7 @@ header .register {
 	width: 100%;
 	background-color: white;
 	border: 1px solid black;
-}
-
-.collabox #mid {
-	padding-top: 70px;
+	margin-bottom: 50px;
 }
 
 #activeCollabs .boxtitle{
@@ -109,15 +133,21 @@ header .register {
 #profile {
 	border-right: 2px solid black;
 	width: 200px;
-	padding: 0 0 100% 0;
-	display: inline-block;
+	padding: 0 0 6000% 0;
+	margin-top: 30px;
+	display: block;
 	float: left;
+}
+
+#profile h1 {
+	margin-bottom: 30px;
 }
 
 #profile a {
 	display: block;
 	font-size: 16px;
 	font-weight: 300;
+	margin-bottom: 10px;
 }
 
 /*Login and Register*/
@@ -157,7 +187,6 @@ header .register {
 #login a {
 	float: right;
 	font-size: 14px;
-
 }
 
 
