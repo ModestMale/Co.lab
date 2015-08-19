@@ -10,18 +10,33 @@
 
 	<body>		
 		<header>
-			<img src="images/colablogo.png" alt="colab" class="logo">
+		<nav>
+			<img src="images/colablogo.png" alt="colab" class="logo">	
+			<a href="#">Logout</a>
 			<form>
+				<img src="images/search.png" class="headericon">
 				<input type="search" value="Search..." class="searchbox">
-				<input type="image" src="images/search.png" name="search" class="headericon">
 			</form>
-
+			
+		</nav>
 		</header>
 	<div id="container">
 		<div id="findcollabs2">
-
+			<h1>Refine your search</h1>
+			<img src="images/materials.png" alt="materials" class="refineicon">
+			<img src="images/location.png" alt="location" class="refineicon">
+			<img src="images/industry.png" alt="industry" class="refineicon">
 				<form>
-					<input type="submit" name="login" value="Next" id="submit">
+						<label for="material">What material do you want to collaborate on?</label>
+						<input type="text" name="material" placeholder="Start typing...">
+
+						<label for="fname">What Industries do you want to collaborate with?</label>
+						<input type="text" name="industries" placeholder="Start typing...">
+
+						<label for="fname">Define collaborator locations...</label>
+						<input type="text" name="locations" placeholder="Start typing...">
+
+					<input type="submit" name="next" value="Next" id="submit">
 			</form>
 		</div>
 
