@@ -1,7 +1,4 @@
+$(".plusminus").click(function(){
+	$(this).parent().toggleClass("open");
 
-
-// $(".plusminus").click(function(){
-// 	$("this").slideToggle();
-
-// 	$(".item").css('display','block')
-// })
+})

@@ -55,6 +55,13 @@ header {
 	width: 100%;
 }	
 
+footer {
+	height: 30px;
+	border-bottom: 2px solid lightgrey;
+	clear: both;
+	margin: 30px 0 30px 0
+}
+
 h1 {
 	font-size: 24px;
 	font-weight: 600;
@@ -80,7 +87,7 @@ nav {
 }
 
 nav .logo {
-	margin: 15px 0 0 15px;
+	margin: 15px 0 0 0;
 	height: 40px;
 	display: inline-block;
 	float: left;
@@ -153,10 +160,18 @@ nav form {
 	position: relative;
 }
 
-
-
-#activeCollabs .boxtitle{
+#activeCollabs .boxtitle {
 	margin: 10px 0 0 10px;
+}
+
+.collabox .collaboxlogo {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.collabox .collaboxlogo img {
+	width: 40px;
 }
 
 .collaboximg {
@@ -171,10 +186,20 @@ nav form {
 .item {
 	display: inline-block;
 }
+
+.open .item{
+	display: block;
+}
+
 .links {
 	display: none;
-	margin-left: 10px;
+	margin-left: 30px;
 }
+
+.open .links {
+	display: inline-block;
+}
+
 
 .links a {
 	display: block;
@@ -188,10 +213,12 @@ nav form {
 	right: 10px;
 }
 
+/*Profile*/
+
 #profile {
 	border-right: 2px solid black;
 	width: 200px;
-	padding: 0 0 100% 0;
+	padding: 0 0 60% 0;
 	margin-top: 30px;
 	display: block;
 	float: left;
@@ -231,10 +258,18 @@ nav form {
 	margin: 15px 20px 0 0;
 	color: #FAA633;
 	background-color: black;
+	height: 50px;
 }
 
 .findcollabimg {
 	cursor: pointer;
+	content: 
+}
+
+.findcollabimg:hover {
+	background-size: 200px;
+	background-color: #FAA633;
+	border-radius: 3px;
 }
 
 /*Find Collabs2*/
@@ -257,13 +292,17 @@ nav form {
 	padding-top: 30px;
 }
 
-#findcollabs2 form input{
+#findcollabs2 form input {
 	width: 450px;
 	display: block;
 	margin: 5px 0 25px 0;
 	height: 30px;
 }
 
+#findcollabs2 label {
+	font-size: 18px;
+	font-weight: 400;
+}
 #findcollabs2 form label {
 
 }
@@ -308,7 +347,7 @@ nav form {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
 	#container{
 		width: 100%;
 	}
