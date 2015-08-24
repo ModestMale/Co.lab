@@ -18,5 +18,4 @@ $("#profilemenu1").click(function(){
 
 $("#profilemenu2").click(function(){
 	$(this).parent().toggleClass("open");
-
 })
