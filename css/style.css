@@ -45,6 +45,7 @@ a:hover {
 #submit {
 	cursor: pointer;
 }
+
 /*Header*/
 
 header {
@@ -113,7 +114,12 @@ nav a {
 	font-size: 18px;
 	display: inline-block;
 	float: right;
-	padding: 23px 0 0 23px;
+	padding: 25px 0 0 25px;
+	position: relative;
+}
+
+nav a:hover {
+	text-decoration: underline;
 }
 
 nav form {
@@ -121,13 +127,18 @@ nav form {
 	height: 30px;
 	padding-top: 20px;
 	float: right;
+	position: relative;
 }
 
 .searchbox {
 	height: 30px;
 	width: 175px;
-	display: inline-block;
+	display: none;
 	border-style: none;
+}
+
+.showsearch .searchbox {
+	display: inline-block;
 }
 
 .headericon {
@@ -135,6 +146,7 @@ nav form {
 	float: right;
 	margin: 3px 3px 3px 10px;
 	display: inline-block;
+	cursor: pointer;
 
 }
 
@@ -185,10 +197,16 @@ nav form {
 
 .item {
 	display: inline-block;
+	-webkit-transition: 1.5s ease;
 }
 
-.open .item{
+
+.open .item {
 	display: block;
+
+}
+.open .collaboximg {
+	margin: 0 0 0 30px;
 }
 
 .links {
@@ -198,8 +216,9 @@ nav form {
 
 .open .links {
 	display: inline-block;
-}
+	padding-bottom: 30px;
 
+}
 
 .links a {
 	display: block;
@@ -218,6 +237,7 @@ nav form {
 #profile {
 	border-right: 2px solid black;
 	width: 200px;
+	height: 100%;
 	padding: 0 0 60% 0;
 	margin-top: 30px;
 	display: block;
@@ -233,6 +253,23 @@ nav form {
 	font-size: 16px;
 	font-weight: 300;
 	margin-bottom: 10px;
+}
+
+#profile .findcollabs {
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+
+#profilemenu1 {
+	display: none;
+}
+
+#profilemenu2 {
+	display: none;
+}
+
+.profilebox {
+	display: none;
 }
 
 /*Find Collabs1*/
@@ -262,11 +299,16 @@ nav form {
 }
 
 .findcollabimg {
-	cursor: pointer;
-	content: 
+	cursor: pointer; 	
 }
 
 .findcollabimg:hover {
+	background-size: 200px;
+	background-color: #FAA633;
+	border-radius: 3px;
+}
+
+.findcollabimg .imgorange {
 	background-size: 200px;
 	background-color: #FAA633;
 	border-radius: 3px;
@@ -312,6 +354,7 @@ nav form {
 #login {
 	width: 540px;
 	margin: 150px auto;
+	position: relative;
 }
 
 #login p{
@@ -342,13 +385,98 @@ nav form {
 }
 
 #login a {
-	float: right;
 	font-size: 14px;
+	position: absolute;
 }
 
 
 @media screen and (max-width: 720px) {
 	#container{
 		width: 100%;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	#activeCollabs {
+		width: 80%;
+	}
+
+	.item {
+	display: block;
+	padding-bottom: 20px; 
+	}
+
+	.links {
+	display: inline-block;
+	}
+
+	.plusminus {
+		display: none;
+	}
+
+	#profile {
+		display: none;
+	}
+
+	nav form {
+		position: absolute;
+		margin-left: 20px;
+	}
+
+	nav a {
+		margin-right: 10px;
+	}
+
+	header .logo {
+		display: none;
+	}
+
+	#profilemenu1 {
+		display: block;
+		position: absolute;
+		margin: 5px;
+	}
+
+	.open .profilebox {
+		display: block;
+		background-color: black;
+		margin: 10px 0 10px 0;
+	}
+
+	.profilebox a {
+		color: #FAA633;
+		display: block;
+		margin: 10px;
+		font-size: 18px;
+	}
+
+	.open #profilemenu1 {
+		display: none;
+	}
+
+	.open #profilemenu2 {
+		display: block;
+		position: absolute;
+		margin: 5px;
+	}
+
+	#findcollabs1 {
+	width: 100%;
+	margin: 30px auto;
+	}
+
+	#findcollabs2 {
+	width: 100%;
+	margin: 30px auto;
+	}
+
+	#findcollabs1 img {
+	margin: 25px;
 	}
 }
