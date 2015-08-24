@@ -446,7 +446,7 @@ nav form {
 	.open .profilebox {
 		display: block;
 		background-color: black;
-		margin: 10px 0 10px 0;
+		margin: 0 0 10px 0;
 	}
 
 	.profilebox a {
@@ -461,7 +461,7 @@ nav form {
 	}
 
 	.open #profilemenu2 {
-		display: block;
+		display: inline-block;
 		position: absolute;
 		margin: 5px;
 	}
@@ -478,5 +478,18 @@ nav form {
 
 	#findcollabs1 img {
 	margin: 25px;
+	}
+
+	#login {
+		width: 100%;
+	}
+
+	#login .logo {
+		width: 90%;
+	}
+
+	#login p{
+		font-size: 21px;
+		text-align: center;
 	}
 }
