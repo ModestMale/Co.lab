@@ -184,6 +184,7 @@ nav form {
 
 .collabox .collaboxlogo img {
 	width: 40px;
+	cursor: pointer;
 }
 
 .collaboximg {
@@ -197,12 +198,17 @@ nav form {
 
 .item {
 	display: inline-block;
-	-webkit-transition: 1.5s ease;
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	transition: all 1.5s ease;
 }
 
 
 .open .item {
 	display: block;
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	transition: all 1.5s ease;
 
 }
 .open .collaboximg {
@@ -217,7 +223,9 @@ nav form {
 .open .links {
 	display: inline-block;
 	padding-bottom: 30px;
-
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	transition: all 1.5s ease;
 }
 
 .links a {
@@ -230,6 +238,44 @@ nav form {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
+	cursor: pointer;
+}
+
+.collabox .plusminus2 {
+	width: 35px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.open .plusminus {
+	display: none;
+}
+
+.open .plusminus2 {
+	display: block;
+}
+
+.collaboxmenu {
+	display: none;
+}
+
+.collaboxmenu a {
+	font-size: 16px;
+	display: block;
+	margin: 5px 10px 5px 10px;
+}
+
+.menuopen .collaboxmenu {
+	display: block;
+	position: absolute;
+	text-align: left;
+	right: 10px;
+	top: 30px;
+	background-color: white;
+	border: 1px solid black;
 }
 
 /*Profile*/
@@ -298,21 +344,21 @@ nav form {
 	height: 50px;
 }
 
-.findcollabimg {
-	cursor: pointer; 	
+.imgorange {
+	display: inline-block;
+	cursor: pointer; 
 }
 
-.findcollabimg:hover {
-	background-size: 200px;
-	background-color: #FAA633;
+.imgorange:hover {
+	background: #FAA633;
 	border-radius: 3px;
 }
 
-.findcollabimg .imgorange {
-	background-size: 200px;
-	background-color: #FAA633;
+.highlight.imgorange {
+	background: #FAA633;
 	border-radius: 3px;
 }
+
 
 /*Find Collabs2*/
 #findcollabs2 {
@@ -454,6 +500,10 @@ nav form {
 		display: block;
 		margin: 10px;
 		font-size: 18px;
+	}
+
+	.profilebox a:hover {
+		text-decoration: underline;
 	}
 
 	.open #profilemenu1 {

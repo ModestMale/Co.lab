@@ -3,12 +3,13 @@ $(".plusminus").click(function(){
 
 })
 
-$(".headericon").click(function(){
-	$(this).parent().toggleClass("showsearch");
+$(".plusminus2").click(function(){
+	$(this).parent().toggleClass("open");
+
 })
 
-$(".findcollabimg").click(function(){
-	$(this).parent().toggleClass("imgorange");
+$(".headericon").click(function(){
+	$(this).parent().toggleClass("showsearch");
 })
 
 $("#profilemenu1").click(function(){
@@ -18,4 +19,13 @@ $("#profilemenu1").click(function(){
 
 $("#profilemenu2").click(function(){
 	$(this).parent().toggleClass("open");
+})
+
+$(".collaboxlogo").click(function(){
+	$(this).parent().toggleClass("menuopen");
+})
+
+$(".imgorange").click(function(){
+	console.log("hey")
+	$(this).toggleClass("highlight");
 })
