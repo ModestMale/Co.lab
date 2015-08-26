@@ -326,7 +326,7 @@ nav form {
 }
 
 #findcollabs1 img {
-	margin: 40px;
+	margin: 30px;
 	width: 100px;
 }
 #findcollabs1 #submit, #findcollabs2 #submit {
@@ -345,6 +345,7 @@ nav form {
 }
 
 .imgorange {
+	margin: 10px;
 	display: inline-block;
 	cursor: pointer; 
 }
@@ -364,6 +365,8 @@ nav form {
 #findcollabs2 {
 	width: 600px;
 	margin: 30px auto;
+	overflow: hidden;
+
 }
 
 #findcollabs2 h1 {
@@ -378,6 +381,8 @@ nav form {
 
 #findcollabs2 form {
 	padding-top: 30px;
+	width: 450px;
+	margin: 0 auto;
 }
 
 #findcollabs2 form input {
@@ -391,10 +396,20 @@ nav form {
 	font-size: 18px;
 	font-weight: 400;
 }
-#findcollabs2 form label {
-
+#searchform ul {
+	list-style: none;
+	background-color: white;
+	border: 1px solid black;
+	font-size: 16px;
+	font-weight: 400;
+	color: black;
+	padding-left: 0;
+	margin-left: 0;
 }
 
+#searchform ul li:hover {
+	background: blue;
+}
 /*Login and Register*/
 
 #login {

@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 $(".plusminus").click(function(){
 	$(this).parent().toggleClass("open");
 
@@ -26,6 +28,39 @@ $(".collaboxlogo").click(function(){
 })
 
 $(".imgorange").click(function(){
-	console.log("hey")
 	$(this).toggleClass("highlight");
 })
+           
+var dictionary = [
+		"Aluminium",
+		"Polystyrene",
+		"Poplpropylene",
+		"Steel",
+		"Timber",
+		"Polycarbonate",
+		"Acrylonitrile butadiene styrene",
+		"Styrene",
+		"Oak",
+		"Nylon",
+		"Steel coil",
+		"Lead",
+		"Graphene",
+		"Zinc",
+		"Iron",
+		"Stainless steel",
+		"Copper",
+		"Nickel",
+		"Polyethelyne",
+
+            ];
+
+
+$("#textmaterial").autocomplete({
+    source: dictionary,
+    appendTo: "#searchform",
+    select: function (event, ui) {
+    }
+
+});
+});
+
