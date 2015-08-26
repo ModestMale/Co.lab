@@ -31,7 +31,7 @@ $(".imgorange").click(function(){
 	$(this).toggleClass("highlight");
 })
            
-var dictionary = [
+var textmaterial = [
 		"Aluminium",
 		"Polystyrene",
 		"Poplpropylene",
@@ -54,13 +54,89 @@ var dictionary = [
 
             ];
 
+var textindustries = [
+		
+"Airline operations",
+"Aluminium industry",
+"Arts administration",
+"Cement and concrete products",
+"Cemetery operations",
+"Coal treatment industry",
+"Defence support",
+"Educational services",
+"Electrical power industry",
+"Entertainment and broadcasting industry",
+"Food, beverages and tobacco industry",
+"Grocery products manufacture",
+"Journalism",
+"Liquor and accommodation industry",
+"Maritime industry",
+"Meat industry",
+"Oil and gas industry",
+"Paper products industry",
+"Pet food manufacturing",
+"Pharmaceutical industry",
+"Photographic industry",
+"Port and harbour services",
+"Postal services",
+"Private transport industry",
+"Publishing industry",
+"Public transport industry",
+"Scientific services",
+"Storage services",
+"Sugar industry",
+"Technical services",
+"Timber industry",
+"Tourism industry",
+"Travel industry",
+"Uranium mining",
+"Vehicle industry",
+"Wholesale and retail trade"
+
+
+            ];
+
+
+var textlocations = [
+
+"Sydney",
+"Melbourne",
+"Perth",
+"Brisbane",
+"Hobart",
+"Darwin",
+"Alice Springs",
+"Cairns",
+"Geelong",
+"Newcastle",
+"Adelaide"
+
+];
+
 
 $("#textmaterial").autocomplete({
-    source: dictionary,
+    source: textmaterial,
     appendTo: "#searchform",
     select: function (event, ui) {
     }
 
 });
+
+$("#textindustries").autocomplete({
+    source: textindustries,
+    appendTo: "#searchform",
+    select: function (event, ui) {
+    }
+
+});
+
+$("#textlocations").autocomplete({
+    source: textlocations,
+    appendTo: "#searchform",
+    select: function (event, ui) {
+    }
+
+});
+
 });
 

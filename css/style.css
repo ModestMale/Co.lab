@@ -122,6 +122,10 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+button {
+	cursor: pointer;
+}
+
 nav form {
 	display: inline-block;
 	height: 30px;
@@ -403,12 +407,16 @@ nav form {
 	font-size: 16px;
 	font-weight: 400;
 	color: black;
-	padding-left: 0;
+	padding-left: 3px;
 	margin-left: 0;
 }
 
 #searchform ul li:hover {
-	background: blue;
+	background: #FAA633;
+}
+
+span div {
+	display: none;
 }
 /*Login and Register*/
 
